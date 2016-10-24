@@ -2,6 +2,6 @@ Rails.application.routes.draw do
 
    get 'pages/*page' => 'pages#show'
 
-  root 'welcome#index'
+  root 'pages#show', page: 'index'
 
 end
