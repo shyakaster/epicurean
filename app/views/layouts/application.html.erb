@@ -2,13 +2,36 @@
 <html>
 <head>
   <title>Epicurean</title>
+  <!-- Description, Keywords and Author -->
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your,Keywords">
+  <meta name="author" content="ResponsiveWebInc">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles -->
+  <!-- Bootstrap CSS -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Portfolio CSS -->
+  <!-- <link href="/assets/css/prettyPhoto.css" rel="stylesheet"> -->
+  <!-- Font awesome CSS -->
+  <!-- <link href="/assets/css/font-awesome.min.css" rel="stylesheet"> -->
+  <!-- Custom Less -->
+  <!-- <link href="/assets/css/less-style.css" rel="stylesheet"> -->
+  <!-- Custom CSS -->
+  <!-- <link href="/assets/css/style.css" rel="stylesheet"> -->
+  <!--[if IE]>
+  <link rel="stylesheet" href="css/ie-style.css"><![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="#">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render 'layouts/header'%>
 <%= yield %>
-
+<%= render 'layouts/footer'%>
 </body>
 </html>
